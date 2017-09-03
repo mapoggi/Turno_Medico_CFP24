@@ -5,9 +5,9 @@
  */
 package visual;
 
-import controladores.ControladorEntrar;
-import controladores.ControladorSalir;
-import controladores.ControladorWindowsLogin;
+import controladorLogin.ControladorEntrar;
+import controladorLogin.ControladorSalir;
+import controladorLogin.ControladorWindowsLogin;
 import java.awt.GridLayout;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowListener;
@@ -24,7 +24,7 @@ import javax.swing.JTextField;
 public class Jlogin extends JFrame{
     
     private JButton entrar = new JButton("Entrar");
-    private JButton salir = new JButton("Salir");
+    private JButton salir = new JButton("Inicio");
     private JLabel lblUsuario = new JLabel("Usuario");
     private JLabel lblClave = new JLabel("Clave");
     private JTextField txtUsuario = new JTextField("");

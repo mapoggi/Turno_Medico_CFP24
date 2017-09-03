@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controladores;
+package controladorLogin;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import visual.Jinicio;
 
 /**
  *
@@ -28,6 +28,8 @@ public class ControladorSalir implements MouseListener{
 
     @Override
     public void mouseClicked(MouseEvent e) {
+        Jinicio inicio = new Jinicio();
+        
     }
 
     @Override
