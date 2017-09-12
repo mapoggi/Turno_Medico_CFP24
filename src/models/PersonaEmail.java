@@ -1,24 +1,24 @@
 package models;
 
 public class PersonaEmail {
-    private Integer personaId; 
-    private Integer tipo; 
+    private Persona personaId; 
+    private TipoEmail tipoEmailId; 
     private String email; 
 
-    public Integer getPersonaId() {
+    public Persona getPersonaId() {
         return personaId;
     }
 
-    public void setPersonaId(Integer personaId) {
+    public void setPersonaId(Persona personaId) {
         this.personaId = personaId;
     }
 
-    public Integer getTipo() {
-        return tipo;
+    public TipoEmail getTipoEmailId() {
+        return tipoEmailId;
     }
 
-    public void setTipo(Integer tipo) {
-        this.tipo = tipo;
+    public void setTipoEmailId(TipoEmail tipoEmailId) {
+        this.tipoEmailId = tipoEmailId;
     }
 
     public String getEmail() {
@@ -29,8 +29,7 @@ public class PersonaEmail {
         this.email = email;
     }
 
-
-
+    
 
     
 }

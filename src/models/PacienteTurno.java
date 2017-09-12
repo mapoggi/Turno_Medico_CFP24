@@ -2,9 +2,9 @@ package models;
 
 public class PacienteTurno {
     private Integer id;
-    private Integer personaId;
-    private Integer profTurnoId;
-    private String hora;
+    private Persona personaId;
+    private ProfesionalTurno profTurnoId;
+    private Integer hora;
     private Integer cancelado;
 
     public Integer getId() {
@@ -15,27 +15,27 @@ public class PacienteTurno {
         this.id = id;
     }
 
-    public Integer getPersonaId() {
+    public Persona getPersonaId() {
         return personaId;
     }
 
-    public void setPersonaId(Integer personaId) {
+    public void setPersonaId(Persona personaId) {
         this.personaId = personaId;
     }
 
-    public Integer getProfTurnoId() {
+    public ProfesionalTurno getProfTurnoId() {
         return profTurnoId;
     }
 
-    public void setProfTurnoId(Integer profTurnoId) {
+    public void setProfTurnoId(ProfesionalTurno profTurnoId) {
         this.profTurnoId = profTurnoId;
     }
 
-    public String getHora() {
+    public Integer getHora() {
         return hora;
     }
 
-    public void setHora(String hora) {
+    public void setHora(Integer hora) {
         this.hora = hora;
     }
 
@@ -47,5 +47,4 @@ public class PacienteTurno {
         this.cancelado = cancelado;
     }
 
-    
 }

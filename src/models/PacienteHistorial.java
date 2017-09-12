@@ -1,14 +1,23 @@
 package models;
 
 public class PacienteHistorial {
-    private Integer pacienteTurnoId;
+    private Integer id;
+    private PacienteTurno pacienteTurnoId;
     private String descripcion;
 
-    public Integer getPacienteTurnoId() {
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public PacienteTurno getPacienteTurnoId() {
         return pacienteTurnoId;
     }
 
-    public void setPacienteTurnoId(Integer pacienteTurnoId) {
+    public void setPacienteTurnoId(PacienteTurno pacienteTurnoId) {
         this.pacienteTurnoId = pacienteTurnoId;
     }
 

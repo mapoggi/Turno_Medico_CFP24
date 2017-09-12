@@ -2,8 +2,8 @@ package models;
 
 public class PersonaMatricula {
     private Integer id; 
-    private Integer personaId; 
-    private Integer matricula; 
+    private Persona personaId; 
+    private String matricula; 
 
     public Integer getId() {
         return id;
@@ -13,21 +13,22 @@ public class PersonaMatricula {
         this.id = id;
     }
 
-    public Integer getPersonaId() {
+    public Persona getPersonaId() {
         return personaId;
     }
 
-    public void setPersonaId(Integer personaId) {
+    public void setPersonaId(Persona personaId) {
         this.personaId = personaId;
     }
 
-    public Integer getMatricula() {
+    public String getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(Integer matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
 
 
     

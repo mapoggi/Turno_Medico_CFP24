@@ -3,12 +3,12 @@ package models;
 
 public class Persona {
     private Integer id;
+    private PersonaGenero personaGeneroId;
     private String nombre;
     private String apellido;
-    private Integer genero;
     private Integer dni;
-    private String usuario;
-    private String contraseña;
+    private Integer usuario;
+    private Integer contraseña;
 
     public Integer getId() {
         return id;
@@ -16,6 +16,14 @@ public class Persona {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public PersonaGenero getPersonaGeneroId() {
+        return personaGeneroId;
+    }
+
+    public void setPersonaGeneroId(PersonaGenero personaGeneroId) {
+        this.personaGeneroId = personaGeneroId;
     }
 
     public String getNombre() {
@@ -34,14 +42,6 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public Integer getGenero() {
-        return genero;
-    }
-
-    public void setGenero(Integer genero) {
-        this.genero = genero;
-    }
-
     public Integer getDni() {
         return dni;
     }
@@ -50,22 +50,21 @@ public class Persona {
         this.dni = dni;
     }
 
-    public String getUsuario() {
+    public Integer getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(String usuario) {
+    public void setUsuario(Integer usuario) {
         this.usuario = usuario;
     }
 
-    public String getContraseña() {
+    public Integer getContraseña() {
         return contraseña;
     }
 
-    public void setContraseña(String contraseña) {
+    public void setContraseña(Integer contraseña) {
         this.contraseña = contraseña;
     }
 
-    
     
 }

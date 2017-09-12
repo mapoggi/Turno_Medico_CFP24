@@ -1,23 +1,15 @@
 package models;
 
 public class ProfesionalTurno {
-    private Integer personaId;
-    private Integer id;
-    private Integer turno;
-    private Integer dia;
-    private String horaIni;
-    private String horaFin;
-    private Integer profesionalEspecialidad;
-    private Integer fraccion;
-    private Integer discontinuar;
-
-    public Integer getPersonaId() {
-        return personaId;
-    }
-
-    public void setPersonaId(Integer personaId) {
-        this.personaId = personaId;
-    }
+  private Integer id;
+  private PersonaGenero personaGeneroId;
+  private Turno turnoId;
+  private PersonaEspecialidad personaEspecialidadId;
+  private Integer dia;
+  private String horaIni;
+  private String horaFin;
+  private Integer fraccion;
+  private Integer discontinuar;
 
     public Integer getId() {
         return id;
@@ -27,12 +19,28 @@ public class ProfesionalTurno {
         this.id = id;
     }
 
-    public Integer getTurno() {
-        return turno;
+    public PersonaGenero getPersonaGeneroId() {
+        return personaGeneroId;
     }
 
-    public void setTurno(Integer turno) {
-        this.turno = turno;
+    public void setPersonaGeneroId(PersonaGenero personaGeneroId) {
+        this.personaGeneroId = personaGeneroId;
+    }
+
+    public Turno getTurnoId() {
+        return turnoId;
+    }
+
+    public void setTurnoId(Turno turnoId) {
+        this.turnoId = turnoId;
+    }
+
+    public PersonaEspecialidad getPersonaEspecialidadId() {
+        return personaEspecialidadId;
+    }
+
+    public void setPersonaEspecialidadId(PersonaEspecialidad personaEspecialidadId) {
+        this.personaEspecialidadId = personaEspecialidadId;
     }
 
     public Integer getDia() {
@@ -59,14 +67,6 @@ public class ProfesionalTurno {
         this.horaFin = horaFin;
     }
 
-    public Integer getProfesionalEspecialidad() {
-        return profesionalEspecialidad;
-    }
-
-    public void setProfesionalEspecialidad(Integer profesionalEspecialidad) {
-        this.profesionalEspecialidad = profesionalEspecialidad;
-    }
-
     public Integer getFraccion() {
         return fraccion;
     }
@@ -82,8 +82,7 @@ public class ProfesionalTurno {
     public void setDiscontinuar(Integer discontinuar) {
         this.discontinuar = discontinuar;
     }
-    
-             
+  
 
 
     

@@ -1,9 +1,8 @@
 package models;
 
-public class PersonaEspecialidad {
+public class TurnoConsultorio {
     private Integer id;
     private String nombre;
-    private Persona personaId;
 
     public Integer getId() {
         return id;
@@ -21,16 +20,6 @@ public class PersonaEspecialidad {
         this.nombre = nombre;
     }
 
-    public Persona getPersonaId() {
-        return personaId;
-    }
-
-    public void setPersonaId(Persona personaId) {
-        this.personaId = personaId;
-    }
-
-   
-    
     
     
 }
