@@ -58,7 +58,7 @@ public class menuprincipal extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton4.setText("TURNOS");
 
-        jButton5.setText("Ingresar con otro usuario");
+        jButton5.setText("Volver a inicio");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
