@@ -35,18 +35,31 @@ public class bienvenido extends javax.swing.JFrame {
         botIng = new javax.swing.JButton();
         botReg = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labUsu.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labUsu.setText("Usuario:");
+        getContentPane().add(labUsu, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, -1, -1));
+        labUsu.getAccessibleContext().setAccessibleDescription("labUsu");
+        labUsu.getAccessibleContext().setAccessibleParent(labUsu);
 
-        textUsu.setText("jTextField1");
+        getContentPane().add(textUsu, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 150, -1));
+        textUsu.getAccessibleContext().setAccessibleDescription("textUsu");
+        textUsu.getAccessibleContext().setAccessibleParent(textUsu);
 
         labCont.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labCont.setText("Contraseña:");
+        getContentPane().add(labCont, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 50, -1, -1));
+        labCont.getAccessibleContext().setAccessibleDescription("labCont");
+        labCont.getAccessibleContext().setAccessibleParent(labCont);
 
-        textCont.setText("jTextField2");
+        getContentPane().add(textCont, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 150, -1));
+        textCont.getAccessibleContext().setAccessibleDescription("textCont");
+        textCont.getAccessibleContext().setAccessibleParent(textCont);
 
         botSalir.setText("Salir del programa");
         botSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -54,6 +67,9 @@ public class bienvenido extends javax.swing.JFrame {
                 botSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(botSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 560, 140, -1));
+        botSalir.getAccessibleContext().setAccessibleDescription("botSalir");
+        botSalir.getAccessibleContext().setAccessibleParent(botSalir);
 
         botIng.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         botIng.setText("INGRESAR");
@@ -62,77 +78,26 @@ public class bienvenido extends javax.swing.JFrame {
                 botIngActionPerformed(evt);
             }
         });
+        getContentPane().add(botIng, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 80, 150, -1));
+        botIng.getAccessibleContext().setAccessibleDescription("botIng");
+        botIng.getAccessibleContext().setAccessibleParent(botIng);
 
         botReg.setText("REGISTRARSE");
+        getContentPane().add(botReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
+        botReg.getAccessibleContext().setAccessibleDescription("botReg");
+        botReg.getAccessibleContext().setAccessibleParent(botReg);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Turnos para Consultorio Médico");
         jLabel4.setOpaque(true);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 600, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 498, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botSalir, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(labCont)
-                                    .addComponent(labUsu))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(textCont)
-                                    .addComponent(textUsu)
-                                    .addComponent(botIng, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(botReg, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 719, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(textUsu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(labUsu)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labCont)
-                    .addComponent(textCont, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botIng)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botReg)
-                .addGap(103, 103, 103)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 204, Short.MAX_VALUE)
-                .addComponent(botSalir)
-                .addContainerGap())
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 100));
 
-        labUsu.getAccessibleContext().setAccessibleDescription("labUsu");
-        labUsu.getAccessibleContext().setAccessibleParent(labUsu);
-        textUsu.getAccessibleContext().setAccessibleDescription("textUsu");
-        textUsu.getAccessibleContext().setAccessibleParent(textUsu);
-        labCont.getAccessibleContext().setAccessibleDescription("labCont");
-        labCont.getAccessibleContext().setAccessibleParent(labCont);
-        textCont.getAccessibleContext().setAccessibleDescription("textCont");
-        textCont.getAccessibleContext().setAccessibleParent(textCont);
-        botSalir.getAccessibleContext().setAccessibleDescription("botSalir");
-        botSalir.getAccessibleContext().setAccessibleParent(botSalir);
-        botIng.getAccessibleContext().setAccessibleDescription("botIng");
-        botIng.getAccessibleContext().setAccessibleParent(botIng);
-        botReg.getAccessibleContext().setAccessibleDescription("botReg");
-        botReg.getAccessibleContext().setAccessibleParent(botReg);
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\bienvenida.jpg")); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,6 +149,8 @@ public class bienvenido extends javax.swing.JFrame {
     private javax.swing.JButton botIng;
     private javax.swing.JButton botReg;
     private javax.swing.JButton botSalir;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel labCont;
     private javax.swing.JLabel labUsu;
