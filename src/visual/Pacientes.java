@@ -39,6 +39,8 @@ public class Pacientes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 110, 90));
 
         jButton5.setText("Volver al menu principal");
@@ -75,6 +77,8 @@ public class Pacientes extends javax.swing.JFrame {
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton6.setText("CONSULTA HISTORIAS CLINICAS");
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 320, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\prof3.jpg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 550));
 
         pack();

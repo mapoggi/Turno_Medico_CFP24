@@ -14,11 +14,11 @@ public class Bienvenido extends javax.swing.JFrame {
         textUsu = new javax.swing.JTextField();
         labCont = new javax.swing.JLabel();
         textCont = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         botSalir = new javax.swing.JButton();
         botIng = new javax.swing.JButton();
         botReg = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -43,6 +43,9 @@ public class Bienvenido extends javax.swing.JFrame {
         getContentPane().add(textCont, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 150, -1));
         textCont.getAccessibleContext().setAccessibleDescription("textCont");
         textCont.getAccessibleContext().setAccessibleParent(textCont);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 100));
 
         botSalir.setText("Salir del programa");
         botSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +78,6 @@ public class Bienvenido extends javax.swing.JFrame {
         jLabel4.setText("Turnos para Consultorio Médico");
         jLabel4.setOpaque(true);
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 600, -1));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 100));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\bienvenida.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 590));
