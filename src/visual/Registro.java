@@ -75,6 +75,8 @@ public class Registro extends javax.swing.JPanel {
             }
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 380, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg")); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 430));
     }// </editor-fold>//GEN-END:initComponents
 
