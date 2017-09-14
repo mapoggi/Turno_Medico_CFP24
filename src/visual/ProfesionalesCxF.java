@@ -142,7 +142,7 @@ public class ProfesionalesCxF extends javax.swing.JFrame {
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, 20));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 110, 110));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 377, -1));
 
@@ -164,7 +164,7 @@ public class ProfesionalesCxF extends javax.swing.JFrame {
         jLabel4.setText("Consultas por Fecha");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, 330, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\A-GUARDAPOLVO-MEDIC.jpg")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/A-GUARDAPOLVO-MEDIC.jpg"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 770, 580));
 
         pack();

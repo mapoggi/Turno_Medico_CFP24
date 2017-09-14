@@ -86,6 +86,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visual/imagenes/images (1).jpg"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="330" width="110" height="100"/>
@@ -135,7 +140,7 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Ejercicios Java Codo a Codo\TurnosParaClinica\imagenes\Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg"/>
+          <Image iconType="3" name="/visual/imagenes/Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg"/>
         </Property>
       </Properties>
       <Constraints>
