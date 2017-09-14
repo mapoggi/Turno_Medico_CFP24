@@ -60,8 +60,6 @@ public class registro extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 170, -1));
         add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 320, -1));
         add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 320, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 110, 100));
         add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 320, -1));
 
@@ -77,8 +75,6 @@ public class registro extends javax.swing.JPanel {
             }
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 380, -1, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg")); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 430));
     }// </editor-fold>//GEN-END:initComponents
 

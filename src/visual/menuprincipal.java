@@ -28,11 +28,11 @@ public class menuprincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnpacientes = new javax.swing.JButton();
+        btnprofesionales = new javax.swing.JButton();
+        btnespecialidad = new javax.swing.JButton();
+        btnturnos = new javax.swing.JButton();
+        btnvolverinicio = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -47,34 +47,49 @@ public class menuprincipal extends javax.swing.JFrame {
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 350, 30));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setText("PACIENTES");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnpacientes.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnpacientes.setText("PACIENTES");
+        btnpacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnpacientesActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 330, 40));
+        getContentPane().add(btnpacientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 330, 40));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setText("PROFESIONALES");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 330, 40));
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setText("ESPECIALIDADES");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 330, 40));
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setText("TURNOS");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 330, 40));
-
-        jButton5.setText("Volver a inicio");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnprofesionales.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnprofesionales.setText("PROFESIONALES");
+        btnprofesionales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnprofesionalesActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, 140, 40));
+        getContentPane().add(btnprofesionales, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 330, 40));
+
+        btnespecialidad.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnespecialidad.setText("ESPECIALIDADES");
+        btnespecialidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnespecialidadActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnespecialidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 330, 40));
+
+        btnturnos.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnturnos.setText("TURNOS");
+        btnturnos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnturnosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnturnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 330, 40));
+
+        btnvolverinicio.setText("Volver a inicio");
+        btnvolverinicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnvolverinicioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnvolverinicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, 140, 40));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 40)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 204, 204));
@@ -82,24 +97,38 @@ public class menuprincipal extends javax.swing.JFrame {
         jLabel5.setText("Turnos ");
         jLabel5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 290, 40));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\menu_principal.jpg")); // NOI18N
-        jLabel1.setText("dfgvasdgfad");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnpacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpacientesActionPerformed
+        pacienteCxE paciente = new pacienteCxE();
+        paciente.setVisible(true);
+       
+    }//GEN-LAST:event_btnpacientesActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void btnvolverinicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvolverinicioActionPerformed
+        bienvenido inicio = new bienvenido();
+        inicio.setVisible(true);
+    }//GEN-LAST:event_btnvolverinicioActionPerformed
+
+    private void btnprofesionalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnprofesionalesActionPerformed
+       profesionales profesional = new profesionales();
+       profesional.setVisible(true);
+    }//GEN-LAST:event_btnprofesionalesActionPerformed
+
+    private void btnespecialidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnespecialidadActionPerformed
+        
+        especialidades especialidad = new especialidades();
+        especialidad.setVisible(true);
+    }//GEN-LAST:event_btnespecialidadActionPerformed
+
+    private void btnturnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnturnosActionPerformed
+        turnos turno = new turnos();
+        turno.setVisible(true);
+    }//GEN-LAST:event_btnturnosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,11 +166,11 @@ public class menuprincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnespecialidad;
+    private javax.swing.JButton btnpacientes;
+    private javax.swing.JButton btnprofesionales;
+    private javax.swing.JButton btnturnos;
+    private javax.swing.JButton btnvolverinicio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
