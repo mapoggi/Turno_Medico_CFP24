@@ -9,12 +9,12 @@ package visual;
  *
  * @author Silvia
  */
-public class pacientesCxF extends javax.swing.JFrame {
+public class PacientesCxF extends javax.swing.JFrame {
 
     /**
      * Creates new form pacientesCxF
      */
-    public pacientesCxF() {
+    public PacientesCxF() {
         initComponents();
     }
 
@@ -260,20 +260,21 @@ public class pacientesCxF extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(pacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(pacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(pacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(pacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new pacientesCxF().setVisible(true);
+                new PacientesCxF().setVisible(true);
             }
         });
     }

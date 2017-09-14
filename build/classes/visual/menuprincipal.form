@@ -146,6 +146,14 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
+<<<<<<< HEAD:src/visual/menuprincipal.form
+=======
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Ejercicios Java Codo a Codo\TurnosParaClinica\imagenes\menu_principal.jpg"/>
+        </Property>
+      </Properties>
+>>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/MenuPrincipal.form
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="770" height="540"/>

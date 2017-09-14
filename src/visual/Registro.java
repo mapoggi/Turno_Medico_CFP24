@@ -9,12 +9,12 @@ package visual;
  *
  * @author Silvia
  */
-public class registro extends javax.swing.JPanel {
+public class Registro extends javax.swing.JPanel {
 
     /**
      * Creates new form registro
      */
-    public registro() {
+    public Registro() {
         initComponents();
     }
 
