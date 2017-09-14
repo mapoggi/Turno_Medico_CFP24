@@ -16,8 +16,8 @@ public class Bienvenido extends javax.swing.JFrame {
         textCont = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         botSalir = new javax.swing.JButton();
-        btningresar = new javax.swing.JButton();
-        btnregistrarse = new javax.swing.JButton();
+        botIng = new javax.swing.JButton();
+        botReg = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -57,60 +57,41 @@ public class Bienvenido extends javax.swing.JFrame {
         botSalir.getAccessibleContext().setAccessibleDescription("botSalir");
         botSalir.getAccessibleContext().setAccessibleParent(botSalir);
 
-        btningresar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btningresar.setText("INGRESAR");
-        btningresar.addActionListener(new java.awt.event.ActionListener() {
+        botIng.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        botIng.setText("INGRESAR");
+        botIng.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btningresarActionPerformed(evt);
+                botIngActionPerformed(evt);
             }
         });
-        getContentPane().add(btningresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 80, 150, -1));
-        btningresar.getAccessibleContext().setAccessibleDescription("botIng");
-        btningresar.getAccessibleContext().setAccessibleParent(btningresar);
+        getContentPane().add(botIng, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 80, 150, -1));
+        botIng.getAccessibleContext().setAccessibleDescription("botIng");
+        botIng.getAccessibleContext().setAccessibleParent(botIng);
 
-        btnregistrarse.setText("REGISTRARSE");
-        btnregistrarse.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnregistrarseActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnregistrarse, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
-        btnregistrarse.getAccessibleContext().setAccessibleDescription("botReg");
-        btnregistrarse.getAccessibleContext().setAccessibleParent(btnregistrarse);
+        botReg.setText("REGISTRARSE");
+        getContentPane().add(botReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
+        botReg.getAccessibleContext().setAccessibleDescription("botReg");
+        botReg.getAccessibleContext().setAccessibleParent(botReg);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Turnos para Consultorio Médico");
         jLabel4.setOpaque(true);
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 600, -1));
-<<<<<<< HEAD:src/visual/bienvenido.java
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 100));
-=======
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\bienvenida.jpg")); // NOI18N
->>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/Bienvenido.java
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void botSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botSalirActionPerformed
-<<<<<<< HEAD:src/visual/bienvenido.java
-     this.dispose();
-=======
     System.exit(0);
->>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/Bienvenido.java
     }//GEN-LAST:event_botSalirActionPerformed
 
-    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
-       menuprincipal menu = new menuprincipal();
-       menu.setVisible(true);
-    }//GEN-LAST:event_btningresarActionPerformed
-
-    private void btnregistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarseActionPerformed
-       registro registrarse = new registro();
-       registrarse.setVisible(true);
-    }//GEN-LAST:event_btnregistrarseActionPerformed
+    private void botIngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botIngActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botIngActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,9 +130,9 @@ public class Bienvenido extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botIng;
+    private javax.swing.JButton botReg;
     private javax.swing.JButton botSalir;
-    private javax.swing.JButton btningresar;
-    private javax.swing.JButton btnregistrarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

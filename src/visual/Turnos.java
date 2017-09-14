@@ -51,11 +51,6 @@ public class Turnos extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 381, 40));
 
         jButton5.setText("Volver al menu principal");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -66,13 +61,9 @@ public class Turnos extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, 40));
-<<<<<<< HEAD:src/visual/turnos.java
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 100));
-=======
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\images (1).jpg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 100, 100));
->>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/Turnos.java
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("CONSULTA POR FECHA");
@@ -85,11 +76,8 @@ public class Turnos extends javax.swing.JFrame {
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton6.setText("CONSULTA POR PROFESIONAL");
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 381, 40));
-<<<<<<< HEAD:src/visual/turnos.java
-=======
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Ejercicios Java Codo a Codo\\TurnosParaClinica\\imagenes\\turnos.jpg")); // NOI18N
->>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/Turnos.java
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 540));
 
         pack();
@@ -98,12 +86,6 @@ public class Turnos extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-
-        menuprincipal menu = new menuprincipal();
-       menu.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -44,11 +44,6 @@ public class Especialidades extends javax.swing.JFrame {
         jButton4.setText("CONSULTA POR PROFESIONAL");
 
         jButton5.setText("Volver al menu principal");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton1.setText("REGISTRO DE ESPECIALIDADES");
@@ -121,12 +116,6 @@ public class Especialidades extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        menuprincipal menu = new menuprincipal();
-        menu.setVisible(true);
-
-    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -59,9 +59,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Volver al menu principal"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
-      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="580" y="490" width="-1" height="-1"/>
@@ -85,6 +82,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Ejercicios Java Codo a Codo\TurnosParaClinica\imagenes\images (1).jpg"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="440" width="100" height="100"/>
@@ -131,14 +133,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
-<<<<<<< HEAD:src/visual/turnos.form
-=======
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="2" name="C:\Ejercicios Java Codo a Codo\TurnosParaClinica\imagenes\turnos.jpg"/>
         </Property>
       </Properties>
->>>>>>> 401ef9684490f0c70ee9c8818ab958a615eb2da5:src/visual/Turnos.form
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="750" height="540"/>
