@@ -8,6 +8,7 @@ package clinica;
 import visual.Jinicio;
 import visual.Jlogin;
 import visual.Jpersona;
+import visual.Bienvenido;
 
 /**
  *
@@ -16,7 +17,9 @@ import visual.Jpersona;
 public class Principal {
     public static void main(String[] args) {
        //Jlogin login = new Jlogin();
-        Jpersona persona = new Jpersona();
+        Bienvenido holaMundo = new Bienvenido();
+        holaMundo.setVisible(true);
+        holaMundo.setAlwaysOnTop(true);
        // Jinicio inicio = new Jinicio();
     }
     
