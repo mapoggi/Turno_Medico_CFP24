@@ -16,6 +16,7 @@ public class ProfRegistro extends javax.swing.JFrame {
      */
     public ProfRegistro() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

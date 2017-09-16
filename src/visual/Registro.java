@@ -16,6 +16,7 @@ public class Registro extends javax.swing.JPanel {
      */
     public Registro() {
         initComponents();
+        this.setLocation(300, 300);
     }
 
     /**

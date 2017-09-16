@@ -16,6 +16,7 @@ public class ProfesionalesCxF extends javax.swing.JFrame {
      */
     public ProfesionalesCxF() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

@@ -16,6 +16,7 @@ public class Especialidades extends javax.swing.JFrame {
      */
     public Especialidades() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
