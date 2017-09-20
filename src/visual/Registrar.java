@@ -41,14 +41,20 @@ public class Registrar extends javax.swing.JFrame {
         lblEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         botRegistrar = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("REGISTRO de USUARIO");
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         lblUsuario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblUsuario.setText("Usuario:");
@@ -58,9 +64,11 @@ public class Registrar extends javax.swing.JFrame {
 
         lblClave2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblClave2.setText("Repita la contraseña:");
+        lblClave2.setOpaque(true);
 
         lblEmail.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblEmail.setText("email de seguridad:");
+        lblEmail.setOpaque(true);
 
         botRegistrar.setText("Registrar");
         botRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -69,13 +77,13 @@ public class Registrar extends javax.swing.JFrame {
             }
         });
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg"))); // NOI18N
-
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
             }
         });
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/Say-Goodbye-to-Coworkers-Step-8-Version-2.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,6 +175,10 @@ public class Registrar extends javax.swing.JFrame {
     private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsuarioActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
