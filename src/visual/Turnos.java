@@ -16,6 +16,7 @@ public class Turnos extends javax.swing.JFrame {
      */
     public Turnos() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

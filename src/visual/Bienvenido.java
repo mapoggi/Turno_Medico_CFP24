@@ -1,13 +1,18 @@
 package visual;
 
-import conroladores.ControladorBienvenidoEntrar;
+import controladores.ControladorBienvenidoEntrar;
+
 
 public class Bienvenido extends javax.swing.JFrame {
 
       public Bienvenido() {
         initComponents();
+        this.setLocationRelativeTo(null);
         controladorEntar = new ControladorBienvenidoEntrar(textUsu, textCont);
         botIng.addMouseListener(controladorEntar);
+       
+        
+
     }
 
     @SuppressWarnings("unchecked")
@@ -73,6 +78,11 @@ public class Bienvenido extends javax.swing.JFrame {
         botIng.getAccessibleContext().setAccessibleParent(botIng);
 
         botReg.setText("REGISTRARSE");
+        botReg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botRegActionPerformed(evt);
+            }
+        });
         getContentPane().add(botReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
         botReg.getAccessibleContext().setAccessibleDescription("botReg");
         botReg.getAccessibleContext().setAccessibleParent(botReg);
@@ -90,12 +100,21 @@ public class Bienvenido extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botSalirActionPerformed
-    System.exit(0);
+  
+        System.exit(0);
     }//GEN-LAST:event_botSalirActionPerformed
 
     private void botIngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botIngActionPerformed
-        // TODO add your handling code here:
+
+        
     }//GEN-LAST:event_botIngActionPerformed
+
+    private void botRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botRegActionPerformed
+
+        Registrar regis = new Registrar();
+        regis.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botRegActionPerformed
 
     
    
@@ -113,4 +132,7 @@ public class Bienvenido extends javax.swing.JFrame {
     private javax.swing.JTextField textUsu;
     // End of variables declaration//GEN-END:variables
     private ControladorBienvenidoEntrar controladorEntar;
+  
+
+   
 }

@@ -16,6 +16,7 @@ public class Profesionales extends javax.swing.JFrame {
      */
     public Profesionales() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

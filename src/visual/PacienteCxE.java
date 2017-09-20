@@ -16,6 +16,7 @@ public class PacienteCxE extends javax.swing.JFrame {
      */
     public PacienteCxE() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

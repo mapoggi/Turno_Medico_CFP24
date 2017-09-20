@@ -18,12 +18,7 @@ import visual.Bienvenido;
  */
 public class Principal {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-       //Jlogin login = new Jlogin();
-
-     //   Jpersona persona = new Jpersona();
-     
-        
-        
+      
       
         Bienvenido holaMundo = new Bienvenido();
         holaMundo.setVisible(true);
