@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conroladores;
+package controladores;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -12,7 +12,7 @@ import java.awt.event.WindowListener;
  *
  * @author USER
  */
-public class ControladorWindowsInicio implements WindowListener{
+public class ControladorwindowsPersona implements WindowListener{
 
     @Override
     public void windowOpened(WindowEvent e) {
