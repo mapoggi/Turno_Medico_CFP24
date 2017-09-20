@@ -5,47 +5,47 @@
  */
 package conroladores;
 
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.JTextField;
+import models.Persona;
 
 /**
  *
- * @author USER
+ * @author PC06
  */
-public class ControladorWindowsInicio implements WindowListener{
+public class ControladorRegistrar implements MouseListener{
+    private JTextField textEmail, textUsu, textClave, textClaveRep;
+    private Persona unaPersona;
 
+    public ControladorRegistrar(JTextField textUsu, JTextField textClave, JTextField textClaveRep, JTextField textEmail) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+       
+
+    
     @Override
-    public void windowOpened(WindowEvent e) {
+    public void mouseClicked(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void windowClosing(WindowEvent e) {
+    public void mousePressed(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void windowClosed(WindowEvent e) {
+    public void mouseReleased(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void windowIconified(WindowEvent e) {
+    public void mouseEntered(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void windowDeiconified(WindowEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void windowActivated(WindowEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void windowDeactivated(WindowEvent e) {
+    public void mouseExited(MouseEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
