@@ -50,7 +50,7 @@ public class Turnos extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton4.setText("CONSULTA POR ESPECIALIDAD");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 610, 40));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 610, 30));
 
         jButton5.setText("Volver al menu principal");
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, -1, -1));
@@ -62,26 +62,26 @@ public class Turnos extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 610, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 610, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 100, 100));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("CONSULTA POR FECHA");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 610, 40));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 610, 30));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton7.setText("ASIGNACION Y CANCELACION DE CONSULTORIOS Y ESPECIALIDADES");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 610, 40));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 610, 30));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("CONSULTA POR PACIENTE");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 610, 40));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 610, 30));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton6.setText("CONSULTA POR PROFESIONAL");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 610, 40));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 610, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/turnos.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 540));
