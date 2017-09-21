@@ -29,10 +29,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        botPacientes = new javax.swing.JButton();
+        botProfesionales = new javax.swing.JButton();
+        botEspecialidades = new javax.swing.JButton();
+        botTurnos = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -49,26 +49,41 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 350, 30));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setText("PACIENTES");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botPacientes.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        botPacientes.setText("PACIENTES");
+        botPacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botPacientesActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 330, 40));
+        getContentPane().add(botPacientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 330, 40));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setText("PROFESIONALES");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 330, 40));
+        botProfesionales.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        botProfesionales.setText("PROFESIONALES");
+        botProfesionales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botProfesionalesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botProfesionales, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, 330, 40));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton3.setText("ESPECIALIDADES");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 330, 40));
+        botEspecialidades.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        botEspecialidades.setText("ESPECIALIDADES");
+        botEspecialidades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botEspecialidadesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botEspecialidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 330, 40));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setText("TURNOS");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 330, 40));
+        botTurnos.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        botTurnos.setText("TURNOS");
+        botTurnos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botTurnosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botTurnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 330, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 90));
@@ -95,55 +110,43 @@ public class MenuPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botPacientesActionPerformed
+       
+        Pacientes paciente = new Pacientes();
+        paciente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botPacientesActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
             // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void botProfesionalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botProfesionalesActionPerformed
+     
+        Profesionales profesional = new Profesionales();
+        profesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botProfesionalesActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MenuPrincipal().setVisible(true);
-            }
-        });
-    }
+    private void botEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botEspecialidadesActionPerformed
+     
+        Especialidades especialidad = new Especialidades();
+        especialidad.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botEspecialidadesActionPerformed
+
+    private void botTurnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botTurnosActionPerformed
+   
+        Turnos turno = new Turnos();
+        turno.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botTurnosActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton botEspecialidades;
+    private javax.swing.JButton botPacientes;
+    private javax.swing.JButton botProfesionales;
+    private javax.swing.JButton botTurnos;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
