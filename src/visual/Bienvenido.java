@@ -31,6 +31,7 @@ public class Bienvenido extends javax.swing.JFrame {
         botReg1 = new javax.swing.JButton();
         botSalir1 = new javax.swing.JButton();
         botPersonal = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -119,6 +120,9 @@ public class Bienvenido extends javax.swing.JFrame {
         });
         getContentPane().add(botPersonal, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 560, 190, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/bienvenida.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 800, 600));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -164,6 +168,7 @@ public class Bienvenido extends javax.swing.JFrame {
     private javax.swing.JButton botReg1;
     private javax.swing.JButton botSalir;
     private javax.swing.JButton botSalir1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel labCont;
