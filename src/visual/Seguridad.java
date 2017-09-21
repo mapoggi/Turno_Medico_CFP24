@@ -57,18 +57,16 @@ public class Seguridad extends javax.swing.JFrame {
 
         botAceptar.setBackground(new java.awt.Color(204, 255, 204));
         botAceptar.setText("ACEPTAR");
-        botAceptar.setOpaque(false);
         botAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botAceptarActionPerformed(evt);
             }
         });
-        getContentPane().add(botAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 90, -1));
+        getContentPane().add(botAceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 110, -1));
 
-        botCancelar.setBackground(new java.awt.Color(153, 255, 153));
+        botCancelar.setBackground(new java.awt.Color(204, 255, 204));
         botCancelar.setText("CANCELAR");
-        botCancelar.setOpaque(false);
-        getContentPane().add(botCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 90, -1));
+        getContentPane().add(botCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 110, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/fondo_verde.jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 110));
