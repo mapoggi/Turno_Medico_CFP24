@@ -202,6 +202,11 @@ public class PacienteRegistro extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, 270, 37));
 
         jButton3.setText("EDITAR PACIENTE");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 470, 271, 34));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/hombre.png"))); // NOI18N
@@ -214,6 +219,11 @@ public class PacienteRegistro extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 110, 100));
 
         jButton4.setText("Volver a menu principal");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 520, 270, 40));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/fondo azul.jpeg"))); // NOI18N
@@ -225,6 +235,16 @@ public class PacienteRegistro extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+            
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Pacientes pacientes = new Pacientes();
+        pacientes.setVisible(true);
+        this.setVisible(false); 
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
