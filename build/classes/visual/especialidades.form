@@ -63,7 +63,11 @@
         <Property name="text" type="java.lang.String" value="Volver al menu principal"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VolverMenuPrincipalActionPerformed"/>
+=======
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+>>>>>>> c33e515d3f2cca780d833216e79526bd420429b4
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
