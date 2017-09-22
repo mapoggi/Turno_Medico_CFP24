@@ -5,21 +5,11 @@
  */
 package clinica;
 
-
-import controladorInicio.ControladorRegistrarse;
-import controladorInicio.ControladorSolicitudTurno;
-import controladorInicio.ControladorTurnosDisponibles;
-import controladorInicio.ControladorWindowsInicio;
-import java.awt.GridLayout;
-import java.awt.event.MouseListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-
+import DAO.Coneccion;
+import java.sql.SQLException;
 import visual.Bienvenido;
-import visual.MenuPrincipal;
 
-import visual.Bienvenido;
+
 
 
 /**
@@ -27,11 +17,9 @@ import visual.Bienvenido;
  * @author USER
  */
 public class Principal {
-    public static void main(String[] args) {
-       //Jlogin login = new Jlogin();
-
-     //   Jpersona persona = new Jpersona();
-
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+      
+      
         Bienvenido holaMundo = new Bienvenido();
         holaMundo.setVisible(true);
         holaMundo.setAlwaysOnTop(true);

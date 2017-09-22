@@ -16,6 +16,7 @@ public class Profesionales extends javax.swing.JFrame {
      */
     public Profesionales() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -28,31 +29,36 @@ public class Profesionales extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        botRegProf = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        botCxE = new javax.swing.JButton();
+        botCxF = new javax.swing.JButton();
+        botCxP = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton5.setText("Volver al menu principal");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, -1, 30));
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("REGISTRO DE PROFESIONALES");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 400, 50));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, -1, 30));
+
+        botRegProf.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botRegProf.setText("REGISTRO DE PROFESIONALES");
+        botRegProf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botRegProfActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botRegProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 400, 50));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 110, 110));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 420, 110, 110));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 153, 255));
@@ -60,17 +66,32 @@ public class Profesionales extends javax.swing.JFrame {
         jLabel4.setText("PROFESIONALES");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 330, 60));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("CONSULTA POR ESPECIALIDAD");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 400, 50));
+        botCxE.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxE.setText("CONSULTA POR ESPECIALIDAD");
+        botCxE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxEActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxE, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 400, 50));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("CONSULTA POR FECHA");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 400, 50));
+        botCxF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxF.setText("CONSULTA POR FECHA");
+        botCxF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxF, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 400, 50));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("CONSULTA POR PACIENTE");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 400, 50));
+        botCxP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxP.setText("CONSULTA POR PACIENTE");
+        botCxP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxPActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxP, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 400, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/A-GUARDAPOLVO-MEDIC.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 560));
@@ -78,51 +99,47 @@ public class Profesionales extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botRegProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botRegProfActionPerformed
+        
+        ProfRegistro registroProf = new ProfRegistro();
+        registroProf.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botRegProfActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Profesionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Profesionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Profesionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Profesionales.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       
+       MenuPrincipal menu = new MenuPrincipal();
+       menu.setVisible(true);
+       this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Profesionales().setVisible(true);
-            }
-        });
-    }
+    private void botCxFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxFActionPerformed
+       
+        ProfesionalesCxF cxfProfesional = new ProfesionalesCxF();
+        cxfProfesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxFActionPerformed
+
+    private void botCxPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxPActionPerformed
+       
+        ProfesionalesCxP cxpProfesional = new ProfesionalesCxP();
+        cxpProfesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxPActionPerformed
+
+    private void botCxEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxEActionPerformed
+        
+        ProfesionalesCxE cxeProfesional = new ProfesionalesCxE();
+        cxeProfesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxEActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton botCxE;
+    private javax.swing.JButton botCxF;
+    private javax.swing.JButton botCxP;
+    private javax.swing.JButton botRegProf;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

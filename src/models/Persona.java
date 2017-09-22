@@ -10,6 +10,14 @@ public class Persona {
     private Integer usuario;
     private Integer contraseña;
 
+    public Persona(Integer id, PersonaGenero personaGeneroId, String nombre, String apellido, Integer dni) {
+        this.id = id;
+        this.personaGeneroId = personaGeneroId;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+    }
+
     public Integer getId() {
         return id;
     }

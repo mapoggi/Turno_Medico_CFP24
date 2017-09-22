@@ -16,6 +16,7 @@ public class ProfRegistro extends javax.swing.JFrame {
      */
     public ProfRegistro() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -59,7 +60,7 @@ public class ProfRegistro extends javax.swing.JFrame {
         jList3 = new javax.swing.JList<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         jList4 = new javax.swing.JList<>();
-        jButton4 = new javax.swing.JButton();
+        botMenuProf = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
@@ -79,10 +80,10 @@ public class ProfRegistro extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton3.setText("EDITAR PROFESIONAL");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 460, 310, 34));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 330, 34));
 
         jButton2.setText("ELIMINAR PROFESIONAL");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 410, 140, 37));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 410, -1, 37));
 
         jButton1.setText("REGISTRAR PROFESIONAL");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +91,7 @@ public class ProfRegistro extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 150, 37));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 170, 37));
 
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Sexo:");
@@ -203,8 +204,13 @@ public class ProfRegistro extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 280, 87));
 
-        jButton4.setText("Volver a menu principal");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 310, 40));
+        botMenuProf.setText("Volver a menu principal");
+        botMenuProf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botMenuProfActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botMenuProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 330, 40));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -250,6 +256,12 @@ public class ProfRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void botMenuProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuProfActionPerformed
+        Profesionales profesional = new Profesionales();
+        profesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botMenuProfActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -287,10 +299,10 @@ public class ProfRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botMenuProf;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
