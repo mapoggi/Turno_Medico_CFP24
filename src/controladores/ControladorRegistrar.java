@@ -20,10 +20,10 @@ import javax.swing.JTextField;
  */
 public class ControladorRegistrar implements MouseListener{
 
-    private JTextField txtUsuario;
-    private JTextField txtClave;
-    private JTextField txtClave2;
-    private JTextField txtEmail;
+    private final JTextField txtUsuario;
+    private final JTextField txtClave;
+    private final JTextField txtClave2;
+    private final JTextField txtEmail;
     
     public ControladorRegistrar(JTextField txtUsuario, JTextField txtClave, JTextField txtClave2, JTextField txtEmail) {
 
@@ -41,11 +41,9 @@ public class ControladorRegistrar implements MouseListener{
             conn.conectar();
             Consulta unaConsulta = new Consulta();
             unaPersona = unaConsulta.recuperarPersonaUsuClave(conn.getCnx(), pUsu.getText(), pClave.getText());
-            System.out.println(unaPersona);
+            System.out.println();
             conn.cerrar();
-        } catch (SQLException ex) {
-            Logger.getLogger(ControladorBienvenidoEntrar.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(ControladorBienvenidoEntrar.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
