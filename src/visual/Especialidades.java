@@ -104,7 +104,6 @@ public class Especialidades extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
     private void RegEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegEspecialidadesActionPerformed
         
     }//GEN-LAST:event_RegEspecialidadesActionPerformed
@@ -132,7 +131,7 @@ public class Especialidades extends javax.swing.JFrame {
     }//GEN-LAST:event_VolverMenuPrincipalActionPerformed
 
    
-=======
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -151,7 +150,7 @@ public class Especialidades extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
->>>>>>> c33e515d3f2cca780d833216e79526bd420429b4
+
     public static void main(String args[]) {
        
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
