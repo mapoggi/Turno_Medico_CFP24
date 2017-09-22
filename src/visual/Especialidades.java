@@ -22,14 +22,14 @@ public class Especialidades extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
-        ConProfesionales = new javax.swing.JButton();
-        VolverMenuPrincipal = new javax.swing.JButton();
-        RegEspecialidades = new javax.swing.JButton();
-        ConFecha = new javax.swing.JButton();
-        ConPaciente = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -40,66 +40,44 @@ public class Especialidades extends javax.swing.JFrame {
         jLabel4.setText("ESPECIALIDADES");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 798, -1));
 
-        ConProfesionales.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ConProfesionales.setText("CONSULTA POR PROFESIONAL");
-        ConProfesionales.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConProfesionalesActionPerformed(evt);
-            }
-        });
-        getContentPane().add(ConProfesionales, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 380, 291, 40));
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton4.setText("CONSULTA POR PROFESIONAL");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 380, 291, 40));
 
-<<<<<<< HEAD
-        VolverMenuPrincipal.setText("Volver al menu principal");
-        VolverMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VolverMenuPrincipalActionPerformed(evt);
-            }
-        });
-        getContentPane().add(VolverMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 550, -1, -1));
-=======
         jButton5.setText("Volver al menu principal");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 550, -1, -1));
->>>>>>> c33e515d3f2cca780d833216e79526bd420429b4
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 560, -1, -1));
 
-        RegEspecialidades.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        RegEspecialidades.setText("REGISTRO DE ESPECIALIDADES");
-        RegEspecialidades.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton1.setText("REGISTRO DE ESPECIALIDADES");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RegEspecialidadesActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(RegEspecialidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 233, -1, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 233, -1, 40));
 
-        ConFecha.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ConFecha.setText("CONSULTA POR FECHA");
-        ConFecha.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton2.setText("CONSULTA POR FECHA");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConFechaActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(ConFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 282, 291, 40));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 282, 291, 40));
 
-        ConPaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ConPaciente.setText("CONSULTA POR PACIENTE");
-        ConPaciente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConPacienteActionPerformed(evt);
-            }
-        });
-        getContentPane().add(ConPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 331, 291, 40));
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton3.setText("CONSULTA POR PACIENTE");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 331, 291, 40));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 110, 90));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 680, 600));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/profesionales 2.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 600));
-
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/profesionales 2.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 800, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -183,14 +161,14 @@ public class Especialidades extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ConFecha;
-    private javax.swing.JButton ConPaciente;
-    private javax.swing.JButton ConProfesionales;
-    private javax.swing.JButton RegEspecialidades;
-    private javax.swing.JButton VolverMenuPrincipal;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
