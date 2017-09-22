@@ -60,7 +60,7 @@ public class ProfRegistro extends javax.swing.JFrame {
         jList3 = new javax.swing.JList<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         jList4 = new javax.swing.JList<>();
-        jButton4 = new javax.swing.JButton();
+        botMenuProf = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
@@ -204,8 +204,13 @@ public class ProfRegistro extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 280, 87));
 
-        jButton4.setText("Volver a menu principal");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 330, 40));
+        botMenuProf.setText("Volver a menu principal");
+        botMenuProf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botMenuProfActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botMenuProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 330, 40));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -251,6 +256,12 @@ public class ProfRegistro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void botMenuProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuProfActionPerformed
+        Profesionales profesional = new Profesionales();
+        profesional.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botMenuProfActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -288,10 +299,10 @@ public class ProfRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botMenuProf;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

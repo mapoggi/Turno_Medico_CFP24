@@ -16,6 +16,7 @@ public class ProfesionalesCxP extends javax.swing.JFrame {
      */
     public ProfesionalesCxP() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -42,7 +43,7 @@ public class ProfesionalesCxP extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         BUSCAR = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        botMenuProf = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         jTextField6.setText("jTextField6");
@@ -157,8 +158,13 @@ public class ProfesionalesCxP extends javax.swing.JFrame {
         jButton1.setText("LIMPIAR");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, 172, -1));
 
-        jButton2.setText("Volver al menu Profesionales");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 530, -1, -1));
+        botMenuProf.setText("Volver al menu Profesionales");
+        botMenuProf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botMenuProfActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botMenuProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 530, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/A-GUARDAPOLVO-MEDIC.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 740, 570));
@@ -174,45 +180,16 @@ public class ProfesionalesCxP extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BUSCARActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ProfesionalesCxP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ProfesionalesCxP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ProfesionalesCxP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ProfesionalesCxP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void botMenuProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuProfActionPerformed
+        Profesionales profesional = new Profesionales();
+        profesional.setVisible(true);
+        this.setVisible(false);    }//GEN-LAST:event_botMenuProfActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ProfesionalesCxP().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BUSCAR;
+    private javax.swing.JButton botMenuProf;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;

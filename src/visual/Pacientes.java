@@ -29,13 +29,13 @@ public class Pacientes extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        botMenuPrincipal = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        botRegPac = new javax.swing.JButton();
+        botCxFpaciente = new javax.swing.JButton();
+        botCxPpaciente = new javax.swing.JButton();
+        botCxEpaciente = new javax.swing.JButton();
+        botCxHCpaciente = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,13 +44,13 @@ public class Pacientes extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 0, -1, 90));
 
-        jButton5.setText("Volver al menu principal");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botMenuPrincipal.setText("Volver al menu principal");
+        botMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botMenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 510, -1, 30));
+        getContentPane().add(botMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 510, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
@@ -58,30 +58,50 @@ public class Pacientes extends javax.swing.JFrame {
         jLabel4.setText("PACIENTES");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 400, 50));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("REGISTRO DE PACIENTES");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botRegPac.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botRegPac.setText("REGISTRO DE PACIENTES");
+        botRegPac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botRegPacActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 320, 40));
+        getContentPane().add(botRegPac, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 320, 40));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("CONSULTA POR FECHA");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 320, 40));
+        botCxFpaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxFpaciente.setText("CONSULTA POR FECHA");
+        botCxFpaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxFpacienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxFpaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 320, 40));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("CONSULTA POR PROFESIONAL");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 320, 40));
+        botCxPpaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxPpaciente.setText("CONSULTA POR PROFESIONAL");
+        botCxPpaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxPpacienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxPpaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 320, 40));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("CONSULTA POR ESPECIALIDAD");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 320, 40));
+        botCxEpaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxEpaciente.setText("CONSULTA POR ESPECIALIDAD");
+        botCxEpaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxEpacienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxEpaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 320, 40));
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton6.setText("CONSULTA HISTORIAS CLINICAS");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 320, 40));
+        botCxHCpaciente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxHCpaciente.setText("CONSULTA HISTORIAS CLINICAS");
+        botCxHCpaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCxHCpacienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botCxHCpaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 320, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/turnos (2).jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 560));
@@ -89,60 +109,55 @@ public class Pacientes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botRegPacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botRegPacActionPerformed
+        PacienteRegistro regitroPaciente = new PacienteRegistro();
+        regitroPaciente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botRegPacActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuPrincipalActionPerformed
        MenuPrincipal menu = new MenuPrincipal();
        menu.setVisible(true);
        this.setVisible(false);
        
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botMenuPrincipalActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Pacientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Pacientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Pacientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Pacientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void botCxFpacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxFpacienteActionPerformed
+        PacientesCxF cxfPaciente = new PacientesCxF();
+        cxfPaciente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxFpacienteActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Pacientes().setVisible(true);
-            }
-        });
-    }
+    private void botCxPpacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxPpacienteActionPerformed
+       
+        PacienteCxP cxpPaciente = new PacienteCxP();
+        cxpPaciente.setVisible(true);
+        this.setVisible(false);
+       
+    }//GEN-LAST:event_botCxPpacienteActionPerformed
 
+    private void botCxEpacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxEpacienteActionPerformed
+        
+        PacienteCxE cxePaciente = new PacienteCxE();
+        cxePaciente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxEpacienteActionPerformed
+
+    private void botCxHCpacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxHCpacienteActionPerformed
+
+        PacienteCxHC cxchPaciente = new PacienteCxHC();
+        cxchPaciente.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCxHCpacienteActionPerformed
+
+  
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton botCxEpaciente;
+    private javax.swing.JButton botCxFpaciente;
+    private javax.swing.JButton botCxHCpaciente;
+    private javax.swing.JButton botCxPpaciente;
+    private javax.swing.JButton botMenuPrincipal;
+    private javax.swing.JButton botRegPac;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
