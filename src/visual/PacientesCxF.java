@@ -158,8 +158,8 @@ public class PacientesCxF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void VolverMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VolverMenuPrincipalActionPerformed
-        MenuPrincipal MenuPrincipal = new MenuPrincipal();
-        MenuPrincipal.setVisible(true);
+        Pacientes paciente = new Pacientes();
+        paciente.setVisible(true);
         this.setVisible(false);  
     }//GEN-LAST:event_VolverMenuPrincipalActionPerformed
 
