@@ -42,6 +42,11 @@ public class Bienvenido extends javax.swing.JFrame {
         labUsu.getAccessibleContext().setAccessibleDescription("labUsu");
         labUsu.getAccessibleContext().setAccessibleParent(labUsu);
 
+        textUsu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textUsuActionPerformed(evt);
+            }
+        });
         getContentPane().add(textUsu, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 150, -1));
         textUsu.getAccessibleContext().setAccessibleDescription("textUsu");
         textUsu.getAccessibleContext().setAccessibleParent(textUsu);
@@ -52,6 +57,11 @@ public class Bienvenido extends javax.swing.JFrame {
         labCont.getAccessibleContext().setAccessibleDescription("labCont");
         labCont.getAccessibleContext().setAccessibleParent(labCont);
 
+        textCont.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textContActionPerformed(evt);
+            }
+        });
         getContentPane().add(textCont, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 150, -1));
         textCont.getAccessibleContext().setAccessibleDescription("textCont");
         textCont.getAccessibleContext().setAccessibleParent(textCont);
@@ -133,11 +143,13 @@ public class Bienvenido extends javax.swing.JFrame {
 
     private void botIngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botIngActionPerformed
 
+        botIng.transferFocus();
         
     }//GEN-LAST:event_botIngActionPerformed
 
     private void botRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botRegActionPerformed
 
+        botReg.transferFocus();
         Registrar regis = new Registrar();
         regis.setVisible(true);
         this.setVisible(false);
@@ -157,6 +169,15 @@ public class Bienvenido extends javax.swing.JFrame {
         seg.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_botPersonalActionPerformed
+
+    private void textUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textUsuActionPerformed
+        
+        textUsu.transferFocus();
+    }//GEN-LAST:event_textUsuActionPerformed
+
+    private void textContActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textContActionPerformed
+      textCont.transferFocus();
+    }//GEN-LAST:event_textContActionPerformed
 
     
    

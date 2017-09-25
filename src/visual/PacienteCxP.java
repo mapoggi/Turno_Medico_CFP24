@@ -16,6 +16,8 @@ public class PacienteCxP extends javax.swing.JFrame {
      */
     public PacienteCxP() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("CONSULTA POR PROFESIONAL DE CLIENTES");
     }
 
     /**

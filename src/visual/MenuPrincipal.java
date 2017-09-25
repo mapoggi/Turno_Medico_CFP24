@@ -17,6 +17,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     public MenuPrincipal() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("MENU PRINCIPAL");
     }
 
     /**
@@ -112,6 +113,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void botPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botPacientesActionPerformed
        
+        
         Pacientes paciente = new Pacientes();
         paciente.setVisible(true);
         this.setVisible(false);

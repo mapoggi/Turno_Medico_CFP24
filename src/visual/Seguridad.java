@@ -18,6 +18,8 @@ public class Seguridad extends javax.swing.JFrame {
      */
     public Seguridad() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("SEGURIDAD");
     }
 
     /**
@@ -52,7 +54,19 @@ public class Seguridad extends javax.swing.JFrame {
         jLabel2.setText("USUARIO : ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 20));
+
+        txtUsu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtUsu, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, 120, 20));
+
+        passContra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passContraActionPerformed(evt);
+            }
+        });
         getContentPane().add(passContra, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 120, 20));
 
         botAceptar.setBackground(new java.awt.Color(204, 255, 204));
@@ -66,6 +80,11 @@ public class Seguridad extends javax.swing.JFrame {
 
         botCancelar.setBackground(new java.awt.Color(204, 255, 204));
         botCancelar.setText("CANCELAR");
+        botCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botCancelarActionPerformed(evt);
+            }
+        });
         getContentPane().add(botCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 110, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/fondo_verde.jpg"))); // NOI18N
@@ -76,6 +95,8 @@ public class Seguridad extends javax.swing.JFrame {
 
     private void botAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botAceptarActionPerformed
 
+        botAceptar.transferFocus();
+        
         if (String.valueOf(txtUsu.getText()).compareTo("codoacodo")==0 && String.valueOf(passContra.getPassword()).compareTo("123")==0){
             MenuPrincipal menu = new MenuPrincipal();
             menu.setVisible(true);
@@ -86,40 +107,24 @@ public class Seguridad extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_botAceptarActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Seguridad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void txtUsuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuActionPerformed
+       
+        txtUsu.transferFocus();
+        
+    }//GEN-LAST:event_txtUsuActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Seguridad().setVisible(true);
-            }
-        });
-    }
+    private void passContraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passContraActionPerformed
+
+        passContra.transferFocus();
+        
+    }//GEN-LAST:event_passContraActionPerformed
+
+    private void botCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCancelarActionPerformed
+        
+        Bienvenido bienvenido = new Bienvenido();
+        bienvenido.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_botCancelarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botAceptar;

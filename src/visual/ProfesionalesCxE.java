@@ -16,6 +16,8 @@ public class ProfesionalesCxE extends javax.swing.JFrame {
      */
     public ProfesionalesCxE() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("CONSULTA POR ESPECIALIDAD DE PROFESIONALES");
     }
 
     /**
