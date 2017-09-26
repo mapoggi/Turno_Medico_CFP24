@@ -17,6 +17,7 @@ public class PacienteCxE extends javax.swing.JFrame {
     public PacienteCxE() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("CONSULTA POR ESPECIALIDAD DE PACIENTES");
     }
 
     /**
@@ -30,20 +31,20 @@ public class PacienteCxE extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jTextField2 = new javax.swing.JTextField();
+        txtNom = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtApe = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         botMenuPaciente = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        botBuscar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        botLimpiar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtReg = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -100,16 +101,28 @@ public class PacienteCxE extends javax.swing.JFrame {
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 450, 250));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 375, -1));
+
+        txtNom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 375, -1));
 
         jLabel2.setText("Apellido:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 180, -1, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 375, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+
+        txtApe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtApe, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 375, -1));
 
         jLabel8.setText("Especialidad");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, -1, -1));
 
-        botMenuPaciente.setText("Volver a menu principal");
+        botMenuPaciente.setText("VOLVER");
         botMenuPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botMenuPacienteActionPerformed(evt);
@@ -124,12 +137,22 @@ public class PacienteCxE extends javax.swing.JFrame {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, 270, -1));
 
-        jButton1.setText("BUSCAR");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 430, 127, -1));
+        botBuscar.setText("BUSCAR");
+        botBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botBuscarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 430, 127, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 0, 100, -1));
 
-        jButton2.setText("LIMPIAR");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 430, 136, -1));
+        botLimpiar.setText("LIMPIAR");
+        botLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botLimpiarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 430, 136, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -143,7 +166,13 @@ public class PacienteCxE extends javax.swing.JFrame {
 
         jLabel6.setText("Registro N°");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 68, -1));
+
+        txtReg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRegActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 68, 20));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel10.setText("Consulta Médica");
@@ -168,11 +197,34 @@ public class PacienteCxE extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_botMenuPacienteActionPerformed
 
+    private void txtRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegActionPerformed
+        txtReg.transferFocus();
+    }//GEN-LAST:event_txtRegActionPerformed
+
+    private void txtNomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomActionPerformed
+
+        txtNom.transferFocus();
+    }//GEN-LAST:event_txtNomActionPerformed
+
+    private void txtApeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApeActionPerformed
+        txtApe.transferFocus();
+    }//GEN-LAST:event_txtApeActionPerformed
+
+    private void botLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botLimpiarActionPerformed
+        txtApe.setText("");
+        txtReg.setText("");
+        txtNom.setText("");
+    }//GEN-LAST:event_botLimpiarActionPerformed
+
+    private void botBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botBuscarActionPerformed
+       
+    }//GEN-LAST:event_botBuscarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botBuscar;
+    private javax.swing.JButton botLimpiar;
     private javax.swing.JButton botMenuPaciente;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -187,8 +239,8 @@ public class PacienteCxE extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField txtApe;
+    private javax.swing.JTextField txtNom;
+    private javax.swing.JTextField txtReg;
     // End of variables declaration//GEN-END:variables
 }

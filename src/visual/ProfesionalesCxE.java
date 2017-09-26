@@ -121,7 +121,7 @@ public class ProfesionalesCxE extends javax.swing.JFrame {
         jButton2.setText("LIMPIAR");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(645, 143, 125, -1));
 
-        botMenuProf.setText("Volver al Menu");
+        botMenuProf.setText("VOLVER");
         botMenuProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botMenuProfActionPerformed(evt);

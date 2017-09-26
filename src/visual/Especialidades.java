@@ -15,7 +15,7 @@ public class Especialidades extends javax.swing.JFrame {
     public Especialidades() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.setTitle("PROFESIONALES");
+        this.setTitle("ESPECIALIDADES");
     }
 
  
@@ -25,7 +25,7 @@ public class Especialidades extends javax.swing.JFrame {
 
         jLabel4 = new javax.swing.JLabel();
         botCxProf = new javax.swing.JButton();
-        botVolver = new javax.swing.JButton();
+        botMenuPrincipal = new javax.swing.JButton();
         botRegistro = new javax.swing.JButton();
         botCxF = new javax.swing.JButton();
         botCxP = new javax.swing.JButton();
@@ -46,13 +46,13 @@ public class Especialidades extends javax.swing.JFrame {
         botCxProf.setText("CONSULTA POR PROFESIONAL");
         getContentPane().add(botCxProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(265, 380, 291, 40));
 
-        botVolver.setText("MENU PRINCIPAL");
-        botVolver.addActionListener(new java.awt.event.ActionListener() {
+        botMenuPrincipal.setText("VOLVER A MENU PRINCIPAL");
+        botMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botVolverActionPerformed(evt);
+                botMenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(botVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 560, -1, -1));
+        getContentPane().add(botMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 560, -1, -1));
 
         botRegistro.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         botRegistro.setText("REGISTRO DE ESPECIALIDADES");
@@ -121,19 +121,19 @@ public class Especialidades extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_botCxFActionPerformed
 
-    private void botVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botVolverActionPerformed
+    private void botMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuPrincipalActionPerformed
      
        MenuPrincipal menu = new MenuPrincipal();
        menu.setVisible(true);
        this.setVisible(false);
-    }//GEN-LAST:event_botVolverActionPerformed
+    }//GEN-LAST:event_botMenuPrincipalActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botCxF;
     private javax.swing.JButton botCxP;
     private javax.swing.JButton botCxProf;
+    private javax.swing.JButton botMenuPrincipal;
     private javax.swing.JButton botRegistro;
-    private javax.swing.JButton botVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

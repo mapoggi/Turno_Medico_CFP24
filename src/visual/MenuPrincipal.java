@@ -35,7 +35,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         botEspecialidades = new javax.swing.JButton();
         botTurnos = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        botMenuInicio = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -89,13 +89,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 90));
 
-        jButton5.setText("Volver a inicio");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botMenuInicio.setText("VOLVER A INICIO");
+        botMenuInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botMenuInicioActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, 140, 40));
+        getContentPane().add(botMenuInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 480, 140, 40));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 40)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 204, 204));
@@ -119,9 +119,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_botPacientesActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botMenuInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuInicioActionPerformed
             // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botMenuInicioActionPerformed
 
     private void botProfesionalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botProfesionalesActionPerformed
      
@@ -146,10 +146,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botEspecialidades;
+    private javax.swing.JButton botMenuInicio;
     private javax.swing.JButton botPacientes;
     private javax.swing.JButton botProfesionales;
     private javax.swing.JButton botTurnos;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

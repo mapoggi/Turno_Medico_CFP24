@@ -15,7 +15,7 @@ public class PacientesCxF extends javax.swing.JFrame {
     public PacientesCxF() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.setTitle("Consulta por Fecha de Pacientes");
+        this.setTitle("CONSULTA POR FECHA DE PACIENTES");
     }
 
    
@@ -26,22 +26,22 @@ public class PacientesCxF extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtRegist = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtNombr = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtApelli = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtFechaIni = new javax.swing.JTextField();
+        txtFechaFin = new javax.swing.JTextField();
+        btonBuscar = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btonLimpiar = new javax.swing.JButton();
         VolverMenuPrincipal = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
@@ -60,15 +60,33 @@ public class PacientesCxF extends javax.swing.JFrame {
 
         jLabel6.setText("Registro N°");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 150, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 147, 68, -1));
+
+        txtRegist.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRegistActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtRegist, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 147, 68, -1));
 
         jLabel1.setText("Nombre/s:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 174, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 171, 377, -1));
+
+        txtNombr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombrActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNombr, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 171, 377, -1));
 
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 200, -1, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 197, 377, -1));
+
+        txtApelli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApelliActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtApelli, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 197, 377, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel9.setText("DATOS del PACIENTE");
@@ -132,19 +150,36 @@ public class PacientesCxF extends javax.swing.JFrame {
 
         jLabel8.setText("Desde:");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(601, 258, -1, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 255, 103, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 279, 103, -1));
 
-        jButton1.setText("BUSCAR");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, 30));
+        txtFechaIni.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaIniActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFechaIni, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 255, 103, -1));
+
+        txtFechaFin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaFinActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 279, 103, -1));
+
+        btonBuscar.setText("BUSCAR");
+        getContentPane().add(btonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, 30));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 100, 90));
 
-        jButton2.setText("LIMPIAR");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, -1, 30));
+        btonLimpiar.setText("LIMPIAR");
+        btonLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btonLimpiarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btonLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, -1, 30));
 
-        VolverMenuPrincipal.setText("Volver a menu principal");
+        VolverMenuPrincipal.setText("VOLVER");
         VolverMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VolverMenuPrincipalActionPerformed(evt);
@@ -164,42 +199,39 @@ public class PacientesCxF extends javax.swing.JFrame {
         this.setVisible(false);  
     }//GEN-LAST:event_VolverMenuPrincipalActionPerformed
 
-    
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PacientesCxF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void btonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btonLimpiarActionPerformed
+       txtApelli.setText("");
+       txtFechaFin.setText("");
+       txtFechaIni.setText("");
+       txtNombr.setText("");
+       txtRegist.setText("");
+    }//GEN-LAST:event_btonLimpiarActionPerformed
 
-        
-        java.awt.EventQueue.invokeLater(() -> {
-            new PacientesCxF().setVisible(true);
-        });
-    }
+    private void txtRegistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegistActionPerformed
+        txtRegist.transferFocus();
+    }//GEN-LAST:event_txtRegistActionPerformed
 
+    private void txtNombrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombrActionPerformed
+        txtNombr.transferFocus();
+    }//GEN-LAST:event_txtNombrActionPerformed
+
+    private void txtApelliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApelliActionPerformed
+        txtApelli.transferFocus();
+    }//GEN-LAST:event_txtApelliActionPerformed
+
+    private void txtFechaIniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaIniActionPerformed
+        txtFechaIni.transferFocus();
+    }//GEN-LAST:event_txtFechaIniActionPerformed
+
+    private void txtFechaFinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaFinActionPerformed
+        txtFechaFin.transferFocus();
+    }//GEN-LAST:event_txtFechaFinActionPerformed
+
+  
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton VolverMenuPrincipal;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btonBuscar;
+    private javax.swing.JButton btonLimpiar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -213,10 +245,10 @@ public class PacientesCxF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField txtApelli;
+    private javax.swing.JTextField txtFechaFin;
+    private javax.swing.JTextField txtFechaIni;
+    private javax.swing.JTextField txtNombr;
+    private javax.swing.JTextField txtRegist;
     // End of variables declaration//GEN-END:variables
 }

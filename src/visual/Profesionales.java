@@ -17,6 +17,7 @@ public class Profesionales extends javax.swing.JFrame {
     public Profesionales() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("PROFESIONALES");
     }
 
     /**
@@ -28,7 +29,7 @@ public class Profesionales extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton5 = new javax.swing.JButton();
+        botMenuPrincipal = new javax.swing.JButton();
         botRegProf = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -40,13 +41,13 @@ public class Profesionales extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton5.setText("Volver al menu principal");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botMenuPrincipal.setText("VOLVER A MENU PRINCIPAL");
+        botMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botMenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, -1, 30));
+        getContentPane().add(botMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, -1, 30));
 
         botRegProf.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         botRegProf.setText("REGISTRO DE PROFESIONALES");
@@ -106,12 +107,12 @@ public class Profesionales extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_botRegProfActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuPrincipalActionPerformed
        
        MenuPrincipal menu = new MenuPrincipal();
        menu.setVisible(true);
        this.setVisible(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botMenuPrincipalActionPerformed
 
     private void botCxFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botCxFActionPerformed
        
@@ -139,8 +140,8 @@ public class Profesionales extends javax.swing.JFrame {
     private javax.swing.JButton botCxE;
     private javax.swing.JButton botCxF;
     private javax.swing.JButton botCxP;
+    private javax.swing.JButton botMenuPrincipal;
     private javax.swing.JButton botRegProf;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

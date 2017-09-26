@@ -17,6 +17,7 @@ public class ProfesionalesCxF extends javax.swing.JFrame {
     public ProfesionalesCxF() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("CONSULTA POR FECHAS DE PROFESIONALES");
     }
 
     /**
@@ -147,7 +148,7 @@ public class ProfesionalesCxF extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 110, 110));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 377, -1));
 
-        botMenuProf.setText("Volver a menu principal");
+        botMenuProf.setText("VOLVER");
         botMenuProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botMenuProfActionPerformed(evt);

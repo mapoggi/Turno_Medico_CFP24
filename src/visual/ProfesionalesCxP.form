@@ -224,7 +224,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="botMenuProf">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Volver al menu Profesionales"/>
+        <Property name="text" type="java.lang.String" value="ATRAS"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botMenuProfActionPerformed"/>

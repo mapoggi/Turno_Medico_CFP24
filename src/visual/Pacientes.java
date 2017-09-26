@@ -5,6 +5,7 @@ public class Pacientes extends javax.swing.JFrame {
       public Pacientes() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("PACIENTES");
     }
 
     
@@ -28,7 +29,7 @@ public class Pacientes extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 0, -1, 90));
 
-        botMenuPrincipal.setText("Volver al menu principal");
+        botMenuPrincipal.setText("VOLVER A MENU PRINCIPAL");
         botMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botMenuPrincipalActionPerformed(evt);

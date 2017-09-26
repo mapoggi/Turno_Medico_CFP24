@@ -17,6 +17,7 @@ public class ProfRegistro extends javax.swing.JFrame {
     public ProfRegistro() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("REGISTRO DE PROFESIONALES");
     }
 
     /**
@@ -28,19 +29,19 @@ public class ProfRegistro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnEditar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnRegistrar = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        texGenero = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        texDocumento = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        texApellido = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        texNombre = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        texRegistro = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -63,15 +64,15 @@ public class ProfRegistro extends javax.swing.JFrame {
         botMenuProf = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        texMatricula = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        texEspeci1 = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        texEspeci2 = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        texEspeci3 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -79,44 +80,74 @@ public class ProfRegistro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton3.setText("EDITAR PROFESIONAL");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 330, 34));
+        btnEditar.setText("EDITAR PROFESIONAL");
+        getContentPane().add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 330, 34));
 
-        jButton2.setText("ELIMINAR PROFESIONAL");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 410, -1, 37));
+        btnEliminar.setText("ELIMINAR PROFESIONAL");
+        getContentPane().add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(577, 410, -1, 37));
 
-        jButton1.setText("REGISTRAR PROFESIONAL");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrar.setText("REGISTRAR PROFESIONAL");
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRegistrarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 170, 37));
+        getContentPane().add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 170, 37));
 
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Sexo:");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, 20));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 260, -1));
+
+        texGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texGeneroActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 260, -1));
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Documento:");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 20));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 260, -1));
+
+        texDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texDocumentoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 260, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 50, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 260, -1));
+
+        texApellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texApellidoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 260, -1));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre/s:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, 20));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 260, -1));
+
+        texNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texNombreActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 260, -1));
 
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Registro N°");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 20));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 110, -1));
+
+        texRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texRegistroActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 110, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -204,7 +235,7 @@ public class ProfRegistro extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 280, 87));
 
-        botMenuProf.setText("Volver a menu principal");
+        botMenuProf.setText("VOLVER");
         botMenuProf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botMenuProfActionPerformed(evt);
@@ -221,12 +252,24 @@ public class ProfRegistro extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Matricula N° ");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 20));
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 260, -1));
+
+        texMatricula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texMatriculaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 260, -1));
 
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Especialidad_1: ");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, 20));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 260, -1));
+
+        texEspeci1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texEspeci1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texEspeci1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 260, -1));
 
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Especialidad_2: ");
@@ -236,11 +279,23 @@ public class ProfRegistro extends javax.swing.JFrame {
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Especialidad_3: ");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 20));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 260, -1));
+
+        texEspeci2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texEspeci2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texEspeci2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 260, -1));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 100, 90));
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, -1));
+
+        texEspeci3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                texEspeci3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(texEspeci3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, -1));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/doctores.png"))); // NOI18N
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, 260, 250));
@@ -252,9 +307,9 @@ public class ProfRegistro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void botMenuProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuProfActionPerformed
         Profesionales profesional = new Profesionales();
@@ -262,47 +317,48 @@ public class ProfRegistro extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_botMenuProfActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ProfRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ProfRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ProfRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ProfRegistro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void texRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texRegistroActionPerformed
+        texRegistro.transferFocus();
+    }//GEN-LAST:event_texRegistroActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ProfRegistro().setVisible(true);
-            }
-        });
-    }
+    private void texNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texNombreActionPerformed
+        texNombre.transferFocus();
+    }//GEN-LAST:event_texNombreActionPerformed
 
+    private void texApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texApellidoActionPerformed
+        texApellido.transferFocus();
+    }//GEN-LAST:event_texApellidoActionPerformed
+
+    private void texDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texDocumentoActionPerformed
+        texDocumento.transferFocus();
+    }//GEN-LAST:event_texDocumentoActionPerformed
+
+    private void texGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texGeneroActionPerformed
+        texGenero.transferFocus();
+    }//GEN-LAST:event_texGeneroActionPerformed
+
+    private void texMatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texMatriculaActionPerformed
+        texMatricula.transferFocus();
+    }//GEN-LAST:event_texMatriculaActionPerformed
+
+    private void texEspeci1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texEspeci1ActionPerformed
+        texEspeci1.transferFocus();
+    }//GEN-LAST:event_texEspeci1ActionPerformed
+
+    private void texEspeci2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texEspeci2ActionPerformed
+        texEspeci2.transferFocus();
+    }//GEN-LAST:event_texEspeci2ActionPerformed
+
+    private void texEspeci3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_texEspeci3ActionPerformed
+        texEspeci3.transferFocus();
+    }//GEN-LAST:event_texEspeci3ActionPerformed
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botMenuProf;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnEditar;
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnRegistrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -337,14 +393,14 @@ public class ProfRegistro extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField texApellido;
+    private javax.swing.JTextField texDocumento;
+    private javax.swing.JTextField texEspeci1;
+    private javax.swing.JTextField texEspeci2;
+    private javax.swing.JTextField texEspeci3;
+    private javax.swing.JTextField texGenero;
+    private javax.swing.JTextField texMatricula;
+    private javax.swing.JTextField texNombre;
+    private javax.swing.JTextField texRegistro;
     // End of variables declaration//GEN-END:variables
 }

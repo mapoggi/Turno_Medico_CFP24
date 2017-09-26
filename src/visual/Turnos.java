@@ -17,6 +17,7 @@ public class Turnos extends javax.swing.JFrame {
     public Turnos() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("TURNOS");
     }
 
     /**
@@ -29,14 +30,14 @@ public class Turnos extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        botCxEturnos = new javax.swing.JButton();
+        botMenuPrincipal = new javax.swing.JButton();
+        botAsigCanceTurnos = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        botCxFturnos = new javax.swing.JButton();
+        botAsigCanceConsuEspec = new javax.swing.JButton();
+        botCxPturnos = new javax.swing.JButton();
+        botCxProfTurnos = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,45 +49,45 @@ public class Turnos extends javax.swing.JFrame {
         jLabel4.setText("TURNOS");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 730, 50));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setText("CONSULTA POR ESPECIALIDAD");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 610, 30));
+        botCxEturnos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxEturnos.setText("CONSULTA POR ESPECIALIDAD");
+        getContentPane().add(botCxEturnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 610, 30));
 
-        jButton5.setText("Volver al menu principal");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botMenuPrincipal.setText("VOLVER A MENU PRINCIPAL");
+        botMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botMenuPrincipalActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, -1, -1));
+        getContentPane().add(botMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 490, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("ASIGNACION Y CANCELACION DE TURNOS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botAsigCanceTurnos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botAsigCanceTurnos.setText("ASIGNACION Y CANCELACION DE TURNOS");
+        botAsigCanceTurnos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botAsigCanceTurnosActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 610, 30));
+        getContentPane().add(botAsigCanceTurnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 610, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/images (1).jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 100, 100));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("CONSULTA POR FECHA");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 610, 30));
+        botCxFturnos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxFturnos.setText("CONSULTA POR FECHA");
+        getContentPane().add(botCxFturnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 610, 30));
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton7.setText("ASIGNACION Y CANCELACION DE CONSULTORIOS Y ESPECIALIDADES");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 610, 30));
+        botAsigCanceConsuEspec.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botAsigCanceConsuEspec.setText("ASIGNACION Y CANCELACION DE CONSULTORIOS Y ESPECIALIDADES");
+        getContentPane().add(botAsigCanceConsuEspec, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 610, 30));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton3.setText("CONSULTA POR PACIENTE");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 610, 30));
+        botCxPturnos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxPturnos.setText("CONSULTA POR PACIENTE");
+        getContentPane().add(botCxPturnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 610, 30));
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton6.setText("CONSULTA POR PROFESIONAL");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 610, 30));
+        botCxProfTurnos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        botCxProfTurnos.setText("CONSULTA POR PROFESIONAL");
+        getContentPane().add(botCxProfTurnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 610, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/turnos.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 540));
@@ -94,16 +95,16 @@ public class Turnos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void botAsigCanceTurnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botAsigCanceTurnosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_botAsigCanceTurnosActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botMenuPrincipalActionPerformed
       
        MenuPrincipal menu = new MenuPrincipal();
        menu.setVisible(true);
        this.setVisible(false);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botMenuPrincipalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,13 +143,13 @@ public class Turnos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton botAsigCanceConsuEspec;
+    private javax.swing.JButton botAsigCanceTurnos;
+    private javax.swing.JButton botCxEturnos;
+    private javax.swing.JButton botCxFturnos;
+    private javax.swing.JButton botCxProfTurnos;
+    private javax.swing.JButton botCxPturnos;
+    private javax.swing.JButton botMenuPrincipal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
