@@ -179,7 +179,7 @@ public class PacienteCxP extends javax.swing.JFrame {
         getContentPane().add(botMenuPaciente, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 470, 120, -1));
 
         texNom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/visual/imagenes/profesionales 2.jpg"))); // NOI18N
-        getContentPane().add(texNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 720, 520));
+        getContentPane().add(texNom, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 740, 530));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
