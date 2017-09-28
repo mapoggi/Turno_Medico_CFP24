@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Ejercicios%20Codo%20a%20Codo/Turno_Medico_CFP24/src/visual/TurnosAyC.java</file>
-            <file>file:/C:/Ejercicios%20Codo%20a%20Codo/Turno_Medico_CFP24/src/controladores/ControladorRegistrar.java</file>
-            <file>file:/C:/Ejercicios%20Codo%20a%20Codo/Turno_Medico_CFP24/src/visual/ProfesionalesCxP.java</file>
+            <file>file:/C:/Ejercicios%20Codo%20a%20Codo/Turno_Medico_CFP24/src/controladores/ControladorBienvenidoRegistrar.java</file>
+            <file>file:/C:/Ejercicios%20Codo%20a%20Codo/Turno_Medico_CFP24/src/visual/Bienvenido.java</file>
         </group>
     </open-files>
 </project-private>
